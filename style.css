@@ -144,34 +144,30 @@ header .icons span:hover {
 }
 
 /* HERO */
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 50px;
-  background: white;
+  background: url("images/bg-hero.jpg") no-repeat center center/cover; 
   border-bottom: 3px solid #e0e0e0;
+  min-height: 500px;
+  color: white; /* deixa os textos brancos se a imagem for escura */
 }
 
 .hero .text h1 {
   font-size: 40px;
-  color: #111;
+  color: #fff; /* texto branco */
   margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6); /* sombra p/ contraste */
 }
 
 .hero .text p {
   font-size: 16px;
-  color: #555;
+  color: #ddd; /* cinza claro */
 }
 
-.hero img {
-  width: 400px;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
 }
 
 /* SEÇÃO DE CATEGORIAS */
