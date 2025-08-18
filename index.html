@@ -1,91 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PHLOX - Loja de Tecnologia</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Runner - Shoe Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <div class="logo">PHLOX</div>
-
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-
-    <nav class="nav" id="nav">
-      <a href="#">Início</a>
-      <a href="#">Loja</a>
-      <a href="#">Sobre Nós</a>
-      <a href="#">Blog</a>
-      <a href="#">Contato</a>
+    <div class="logo">Runner <span>👟</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="brand.html">Brand</a></li>
+      </ul>
     </nav>
-
-    <div class="auth">
-      <a href="#">Entrar</a>
-      <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="carrinho" class="cart-icon">
+    <div class="icons">
+      <span>🔍</span>
+      <span>🛒</span>
     </div>
   </header>
 
-  <section class="hero fade-in">
-    <div class="hero-content">
-      <h2>Beats Solo <br><span>Sem Fio</span></h2>
-      <p class="description">Descubra o melhor do som com qualidade premium e liberdade sem fios.</p>
-      <button class="btn-red">Ver Categorias</button>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="text">
+      <h1>NIKE JORDAN<br>ECLIPSE</h1>
+      <button class="btn">Shop Now</button>
     </div>
-    <div class="hero-img">
-      <img src="https://i.ibb.co/FKRyXP2/headphone.png" alt="Fone Sem Fio">
+    <img src="https://i.ibb.co/6ZXcLwC/blue-shoe.png" alt="Nike Jordan Eclipse">
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="card yellow">
+      <img src="https://i.ibb.co/Phfv2p4/shoe-black.png" alt="">
+      <h3>New Collection</h3>
+      <p>Black Sneaker</p>
+      <a href="accessories.html" class="btn">More</a>
+    </div>
+    <div class="card blue">
+      <img src="https://i.ibb.co/zV3vH8d/shoe-white.png" alt="">
+      <h3>For Men</h3>
+      <p>White Sneaker</p>
+      <a href="men.html" class="btn">More</a>
+    </div>
+    <div class="card beige">
+      <img src="https://i.ibb.co/Phfv2p4/shoe-black.png" alt="">
+      <h3>For Women</h3>
+      <p>Black Sneaker</p>
+      <a href="women.html" class="btn">More</a>
     </div>
   </section>
 
-  <section class="categories fade-in">
-    <div class="category" style="--bg:#1e1e1e">
-      <h3>Aproveite com <br><span>Fone de Ouvido</span></h3>
-      <button>Explorar</button>
+  <!-- Reviews -->
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <span>- Mike Jordan</span>
     </div>
-    <div class="category" style="--bg:#f5c100">
-      <h3>Use <br><span>Gadgets</span></h3>
-      <button>Explorar</button>
-    </div>
-    <div class="category" style="--bg:#f44336">
-      <h3>Tecnologia <br><span>Laptops</span></h3>
-      <button>Explorar</button>
-    </div>
-    <div class="category" style="--bg:#efefef">
-      <h3>Melhor para Jogos <br><span>Consoles</span></h3>
-      <button>Explorar</button>
-    </div>
-    <div class="category" style="--bg:#4caf50">
-      <h3>Jogue com <br><span>Óculos VR</span></h3>
-      <button>Explorar</button>
-    </div>
-    <div class="category" style="--bg:#2196f3">
-      <h3>Novo da Amazon <br><span>Alto-falante</span></h3>
-      <button>Explorar</button>
+    <div class="review">
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      <span>- Mike Jordan</span>
     </div>
   </section>
 
-  <section class="features fade-in">
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/464/464587.png" alt="">
-      <p>Frete Grátis</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="">
-      <p>Garantia de Reembolso</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/1034/1034141.png" alt="">
-      <p>Suporte 24/7</p>
-    </div>
-    <div class="feature">
-      <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="">
-      <p>Pagamento Seguro</p>
+  <!-- Featured -->
+  <section class="featured">
+    <h2>Featured Product From Our Store</h2>
+    <div class="product">
+      <img src="https://i.ibb.co/Phfv2p4/shoe-black.png" alt="">
+      <p>130 USD</p>
+      <button class="btn">Buy Now</button>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 PHLOX Store. Todos os direitos reservados.</p>
+    <p>© 2025 Runner. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

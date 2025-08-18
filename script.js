@@ -1,24 +1,23 @@
-// Menu responsivo
-const menuToggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('nav');
+// Pequenas animações de entrada
+document.addEventListener("DOMContentLoaded", () => {
+  const heroText = document.querySelector(".hero .text");
+  heroText.style.opacity = "0";
+  heroText.style.transform = "translateX(-50px)";
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('aberto');
-});
+  setTimeout(() => {
+    heroText.style.transition = "all 1s ease";
+    heroText.style.opacity = "1";
+    heroText.style.transform = "translateX(0)";
+  }, 200);
 
-// Scroll reveal animado
-const elements = document.querySelectorAll('.fade-in');
-
-const callback = (entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
+  // Animação dos botões
+  const buttons = document.querySelectorAll(".btn");
+  buttons.forEach(btn => {
+    btn.addEventListener("mouseover", () => {
+      btn.style.transform = "scale(1.1)";
+    });
+    btn.addEventListener("mouseout", () => {
+      btn.style.transform = "scale(1)";
+    });
   });
-};
-
-const observer = new IntersectionObserver(callback, {
-  threshold: 0.1
 });
-
-elements.forEach(el => observer.observe(el));
